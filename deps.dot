@@ -1,0 +1,73 @@
+/**  Run something like  dot -Tpng -o deps.png deps.dot  to convert to png  **/
+
+strict digraph dependencies
+{
+    // Core classes
+    node [style="filled",color="#000000",fillcolor="#dddddd"]
+    Renderer
+    TextureBase  [color="#dddddd"]
+    Texture
+    Texture3D
+    Program
+    Shader
+    VertexShader
+    FragmentShader
+    Batch
+    Camera
+    FPSCounter
+    GLWidget
+    Mesh
+    TextRenderer
+    GeometryBuffer  [color="#dddddd"]
+    GeometryBufferVertexArray
+    GeometryBufferVBO
+    GeometryBufferFormat
+
+
+    // Extra classes
+    node [style=filled,color="#606060",fillcolor="#ffffff",fontcolor="#606060"]
+    RenderTarget
+    SimpleTerrain
+    Sphere
+    TrackBall
+    HDRGLWidget
+    ModelLoader
+    WidgetProxy
+    HDRGLWidgetControl
+
+
+    // Inheritance
+    edge [style="bold",color="blue",weight="3"]
+    Texture -> TextureBase
+    Texture3D -> TextureBase
+    VertexShader -> Shader
+    FragmentShader -> Shader
+    Mesh -> Batch
+    GeometryBufferVertexArray -> GeometryBuffer
+    GeometryBufferVBO -> GeometryBufferVertexArray
+
+    SimpleTerrain -> Mesh
+    HDRGLWidget -> GLWidget
+
+
+    // Dependancies
+    edge [style="solid",color="#808080",weight="1"]
+    Renderer -> TextureBase
+    Renderer -> Program
+    Program -> Shader
+    GLWidget -> Camera
+    GLWidget -> FPSCounter
+    GLWidget -> TextRenderer
+    Mesh -> Texture
+    Mesh -> Program
+    Batch -> GeometryBuffer
+    GeometryBuffer -> GeometryBufferFormat
+
+    TrackBall -> Camera
+    RenderTarget -> Texture
+    HDRGLWidget -> Program
+    HDRGLWidget -> RenderTarget
+    ModelLoader -> Mesh
+    WidgetProxy -> GLWidget
+    HDRGLWidgetControl -> HDRGLWidget
+}

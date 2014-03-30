@@ -1,0 +1,38 @@
+===  KGLLib README ===
+
+
+-- What is KGLLib --
+KGLLib is an object-oriented OpenGL library designed to ease development of
+OpenGL applications by providing common functionality. It uses Qt and provides
+comfortable Qt-style API. It is also designed to be very extensible, so
+applications wanting more functionality can extend it to suit their needs.
+
+
+-- KGLLib status --
+KGLLib is still in an early stage and under heavy development. As such, it's
+API is still unstable and no binary or even source compatibility is kept for
+now, although I'll try to minimize the number of source-incompatible changes.
+
+As a rule of thumb, if API documentation exists for something, it can be
+considered to be mature enough to be used. If API docs doesn't exist for a
+class or method then it's highly experimental and could be changed or removed
+in future versions.
+API documentation is available at http://freehackers.org/~rivo/kgllib/html/
+
+As KGLLib is highly volatile for now, applications wishing to use it should
+copy it into their own source tree for now and merge with upstream once in a
+while.
+
+
+-- Core and extras --
+KGLLib is divided into two big parts: core and extras. Core library consists of
+the fundamental classes which are useful to a large number of applications.
+Core classes are also more mature and stable than those in extras.
+Extras include more classes and more diverse functionality, including classes
+that have more specific purpose and won't be used by many applications.
+
+
+-- Examples --
+KGLLib comes with many examples which can be found in the examples/ directory.
+At the moment some of those examples need to be run from their source
+directories (otherwise they won't find their data files).

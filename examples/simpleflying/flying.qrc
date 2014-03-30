@@ -1,0 +1,9 @@
+<!DOCTYPE RCC><RCC version="1.0">
+ <qresource>
+     <file>grass1.jpg</file>
+     <file>height.png</file>
+     <file>pilt.png</file>
+     <file>test.frag</file>
+     <file>test.vert</file>
+ </qresource>
+</RCC>

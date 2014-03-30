@@ -1,0 +1,40 @@
+/** @mainpage KGLLib
+
+KGLLib is an OpenGL library for Qt and KDE. It provides an easy-to-use
+object-oriented wrapper around commonly used OpenGL functionality, making
+OpenGL applications easier and faster to write.
+
+KGLLib is divided into two main parts: core and extras.
+<br>
+The core is a smaller and more stable library, consisting only of the essential
+ and most often-used parts. Core classes have usually reached API maturity and
+ should provide at least source-compatibility (between major releases).
+<br>
+Extras consists of less important and less stable classes. Lots of them are
+ still useful to many applications, but as they are not as mature as core
+ classes yet, application developers might want to copy source files of used
+ classes to their applications' source tree.
+
+KGLLib depends on Qt, GLEW and Eigen.
+<br>
+GLEW is an OpenGL extension library, taking care of runtime loading of OpenGL
+ extensions.
+<br>
+Eigen is an excellent template library for vector and matrix math.
+
+You can get KGLLib from KDE SVN:
+<pre>svn co svn://anonsvn.kde.org/home/kde/trunk/playground/libs/kgllib</pre>
+or <a href="http://websvn.kde.org/trunk/playground/libs/kgllib/">browse the SVN repository online</a>.
+
+@authors
+Rivo Laks \<rivolaks@hot.ee\>
+
+@licenses
+@gpl
+
+
+*/
+
+// DOXYGEN_SET_PROJECT_NAME = KGLLib
+// DOXYGEN_EXCLUDE = examples glew
+// vim:ts=4:sw=4:expandtab:filetype=doxygen

@@ -1,0 +1,8 @@
+This directory contains sources for GLEW, The OpenGL Extension Wrangler Library.
+
+It is included here to remove GLEW from the list of KGLLib requirements and
+thus ease it's installation.
+If GLEW is already installed in the system, then the system version is used
+instead.
+
+GLEW's website is http://glew.sourceforge.net/
