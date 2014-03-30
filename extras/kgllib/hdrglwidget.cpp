@@ -515,7 +515,7 @@ Shader* HdrGLWidget::generateBlurFragmentShader(float sigma, int radius, bool ho
     source += "#define BLURCODE ";
     float* kernel = calculateBlurKernel(sigma, radius);
     for (int r = -radius; r <= radius; r++) {
-        source += QString(" \\\n    result += sampleAtOffset(%1.0) * %2;").arg(r).arg(kernel[qAbs(r)]).toAscii();
+        source += QString(" \\\n    result += sampleAtOffset(%1.0) * %2;").arg(r).arg(kernel[qAbs(r)]);
     }
     delete[] kernel;
     source += "\n\n";
@@ -533,5 +533,3 @@ Shader* HdrGLWidget::generateBlurFragmentShader(float sigma, int radius, bool ho
 }
 
 }
-
-#include "hdrglwidget.moc"

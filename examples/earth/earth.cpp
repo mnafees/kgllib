@@ -127,6 +127,3 @@ Mesh* Earth::createStarMesh(int stars)
     m->setPrimitiveType(GL_POINTS);
     return m;
 }
-
-
-#include "earth.moc"

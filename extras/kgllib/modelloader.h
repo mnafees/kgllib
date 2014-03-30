@@ -22,7 +22,7 @@
 
 #include <Eigen/Core>
 
-#include <QtCore/QList>
+#include <QList>
 
 class QString;
 

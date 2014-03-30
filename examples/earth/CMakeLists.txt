@@ -7,8 +7,8 @@ set(earth_SRCS
         main.cpp
         earth.cpp
         )
-qt4_automoc(${earth_SRCS})
-qt4_add_resources(earth_RESOURCES earth.qrc)
+#qt4_automoc(${earth_SRCS})
+qt5_add_resources(earth_RESOURCES earth.qrc)
 
 if(COMMAND cmake_policy)
       cmake_policy(SET CMP0003 NEW)

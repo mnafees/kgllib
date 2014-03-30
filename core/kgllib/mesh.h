@@ -20,7 +20,7 @@
 
 #include "batch.h"
 
-#include <QtCore/QVector>
+#include <QVector>
 
 
 namespace KGLLib

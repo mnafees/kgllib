@@ -21,7 +21,7 @@
 #include "kgllib.h"
 #include "geometrybuffer.h"
 
-#include <QtCore/QList>
+#include <QList>
 
 #include <Eigen/Core>
 

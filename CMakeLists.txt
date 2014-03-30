@@ -8,6 +8,8 @@ set(KGLLIB_VERSION_RELEASE 5)
 set(KGLLIB_LIB_VERSION "${KGLLIB_VERSION_MAJOR}.${KGLLIB_VERSION_MINOR}.${KGLLIB_VERSION_RELEASE}")
 set(KGLLIB_LIB_SOVERSION "${KGLLIB_VERSION_MAJOR}.${KGLLIB_VERSION_MINOR}")
 
+SET(CMAKE_AUTOMOC TRUE)
+
 # Add our own cmake files
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules )
 
@@ -21,7 +23,7 @@ set(DATA_INSTALL_DIR  "${CMAKE_INSTALL_PREFIX}/share/apps"  CACHE PATH "The subd
 
 # Find required packages
 set(QT_USE_OPENGL true)
-find_package(Qt4 REQUIRED)
+find_package(Qt5 COMPONENTS Core Gui OpenGL)
 find_package(OpenGL REQUIRED)
 find_package(GLEW)
 find_package(Eigen2 REQUIRED)
@@ -46,7 +48,7 @@ endif(WIN32)
 if(NOT GLEW_FOUND)
     message(STATUS "GLEW was not found. Using internal GLEW")
 
-    include_directories(${CMAKE_CURRENT_SOURCE_DIR}/glew)
+   include_directories(${CMAKE_CURRENT_SOURCE_DIR}/glew)
     add_definitions(-DGLEW_BUILD)
     add_subdirectory(glew)
     set(GLEW_GLEW_LIBRARY glew)

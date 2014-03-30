@@ -136,6 +136,3 @@ void Logos::renderLogo(KGLLib::Texture* tex)
     // And finally disable texturing.
     tex->disable();
 }
-
-
-#include "logos.moc"

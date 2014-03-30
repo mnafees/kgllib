@@ -21,8 +21,8 @@
 
 #include "kgllib.h"
 
-#include <QtCore/QTime>
-#include <QtCore/QString>
+#include <QTime>
+#include <QString>
 
 
 namespace KGLLib

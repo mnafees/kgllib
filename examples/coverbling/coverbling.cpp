@@ -178,6 +178,3 @@ void CoverBling::renderCover(const Cover& c, bool reflection)
         glTexCoord2f(0, 1); glVertex3f(-0.5,  1.0, 0);
     glEnd();
 }
-
-
-#include "coverbling.moc"

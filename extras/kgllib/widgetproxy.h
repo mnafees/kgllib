@@ -20,7 +20,7 @@
 
 #include "kgllib.h"
 
-#include <QtGui/QGraphicsView>
+#include <QGraphicsView>
 
 class QGraphicsProxyWidget;
 

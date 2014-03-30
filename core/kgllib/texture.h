@@ -20,8 +20,8 @@
 
 #include "kgllib.h"
 
-#include <QtCore/QString>
-#include <QtCore/QSize>
+#include <QString>
+#include <QSize>
 
 
 class QPixmap;

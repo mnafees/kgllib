@@ -2,10 +2,6 @@ add_definitions(${QT_DEFINITIONS} -Wall)
 include_directories(
         ${CMAKE_CURRENT_SOURCE_DIR}
         ${CMAKE_CURRENT_BINARY_DIR}
-        ${QT_INCLUDE_DIR}
-        ${QT_QTCORE_INCLUDE_DIR}
-        ${QT_QTGUI_INCLUDE_DIR}
-        ${QT_QTOPENGL_INCLUDE_DIR}
         ${CMAKE_CURRENT_SOURCE_DIR}/../../core/kgllib
         ${CMAKE_CURRENT_BINARY_DIR}/../../core/kgllib
         ${EIGEN2_INCLUDE_DIR}
@@ -21,8 +17,8 @@ set(kgllib-extras_SRCS
         trackball.cpp
         widgetproxy.cpp
         )
-qt4_wrap_ui(kgllib-extras_UIS_H hdrglwidgetcontrol.ui)
-qt4_automoc(${kgllib-extras_SRCS})
+qt5_wrap_ui(kgllib-extras_UIS_H hdrglwidgetcontrol.ui)
+#qt5_automoc(${kgllib-extras_SRCS})
 
 if(COMMAND cmake_policy)
 	cmake_policy(SET CMP0003 NEW)

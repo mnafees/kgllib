@@ -232,5 +232,3 @@ void GLWidget::render()
 }
 
 }
-
-#include "glwidget.moc"

@@ -18,7 +18,7 @@
 #ifndef KGLLIB_EXPORT_H
 #define KGLLIB_EXPORT_H
 
-#include <QtCore/QtGlobal>
+#include <QtGlobal>
 
 
 #ifndef KGLLIB_EXPORT

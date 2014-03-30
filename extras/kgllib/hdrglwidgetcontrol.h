@@ -20,7 +20,7 @@
 
 #include "kgllib.h"
 
-#include <QtGui/QWidget>
+#include <QWidget>
 
 
 namespace KGLLib

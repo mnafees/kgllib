@@ -30,7 +30,7 @@
 #include "kgllib.h"
 #include <Eigen/Core>
 
-#include <QtGui/QFont>
+#include <QFont>
 
 
 namespace KGLLib

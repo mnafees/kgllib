@@ -7,8 +7,8 @@ set(kgllib-test_SRCS
         main.cpp
         testwidget.cpp
         )
-qt4_automoc(${kgllib-test_SRCS})
-qt4_add_resources(kgllib-test_RESOURCES flying.qrc)
+#qt4_automoc(${kgllib-test_SRCS})
+qt5_add_resources(kgllib-test_RESOURCES flying.qrc)
 
 if(COMMAND cmake_policy)
 	cmake_policy(SET CMP0003 NEW)

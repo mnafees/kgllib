@@ -193,6 +193,3 @@ void TestWidget::render()
 
     QTimer::singleShot(0, this, SLOT(updateGL()));
 }
-
-
-#include "testwidget.moc"

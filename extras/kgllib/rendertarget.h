@@ -20,7 +20,7 @@
 
 #include "kgllib.h"
 
-#include <QtCore/QSize>
+#include <QSize>
 
 namespace KGLLib
 {

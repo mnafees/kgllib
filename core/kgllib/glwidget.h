@@ -20,8 +20,8 @@
 
 
 #include "kgllib.h"
-#include <QtOpenGL/QGLWidget>
-#include <QtCore/QList>
+#include <QGLWidget>
+#include <QList>
 
 #include <Eigen/Core>
 

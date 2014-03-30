@@ -211,6 +211,3 @@ void GLWidget::hideAndDebug()
     hide();
     qDebug() << "GLWidget::hideAndDebug() DONE";
 }
-
-
-#include "demoglwidget.moc"

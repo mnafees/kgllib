@@ -8,7 +8,7 @@ set(widgets_SRCS
         mainwidget.cpp
         demoglwidget.cpp
         )
-qt4_automoc(${widgets_SRCS})
+#qt4_automoc(${widgets_SRCS})
 
 if(COMMAND cmake_policy)
         cmake_policy(SET CMP0003 NEW)
